@@ -4,9 +4,9 @@
 <h2>Burgers to Eat</h2>
 
 <ul>
-  {{#each burger}}
-    {{#unless eaten}}
-      {{> burger/burger-button ready=true}}
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-button ready=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -14,9 +14,9 @@
 <h2>Devoured Burgers</h2>
 
 <ul>
-  {{#each burger}}
-    {{#if eaten}}
-      {{> burger/burger-button ready=false}}
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-button ready=false}}
     {{/if}}
   {{/each}}
 </ul>

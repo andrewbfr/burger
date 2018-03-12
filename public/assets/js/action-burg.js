@@ -16,7 +16,7 @@ $(function() {
         function() {
           console.log("changed eaten to", newMasticate);
           // Reload the page to get the updated list
-          location.reload();
+          window.location.reload();
         }
       );
     });
